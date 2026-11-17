@@ -25,14 +25,14 @@ One turbine, 10-minute readings through 2018 (about 50,530 rows): active power, 
 6. Built the dashboard in Power BI.
 
 ## Key Findings
-- Total energy produced: about [11k] MWh
+- Total energy produced: about [11,013] MWh
 - Average wind speed: 7.56 m/s
 - Estimated availability: 96.46% (a proxy, see Limitations)
-- Energy lost versus the manufacturer's curve while running normally: about [1.14k] MWh
+- Energy lost versus the manufacturer's curve while running normally: about [1,142] MWh
 - Operating breakdown: Normal 76.88%, Low Wind Idle 19.58%, Downtime/Curtailment 3.54%
 - Monthly production was highest in August and March and lowest in July.
-- Power curve: the gap between actual and theoretical power is widest on the steep part of the curve, at about 8-11 m/s. Above roughly 13 m/s, both curves sit close to the rated power of about 3,600 kW.
-- Wind direction: losses were highest for winds from the 0-30 degree sector (16.22% of theoretical energy), followed by the 120-150 degree sector (about 15%) and the 300-360 degree sectors (about 14-15%). Losses were lowest for the 180-210 degree sector (about 5%). Average wind speed differs between sectors (for example 7.8 m/s in the 0-30 degree sector vs 5.04 m/s in the 90-120 degree sector), so part of the difference may come from wind speed rather than direction.
+- Power curve: the gap between actual and theoretical power is widest at about 9.5-11.5 m/s, peaking near 10.5 m/s at roughly 450 kW. Above about 13 m/s both curves sit close to the rated power of about 3,600 kW.
+- Wind direction: loss as a share of theoretical energy was highest for winds from the 0-30 degree sector (16.22%, 3,793 intervals) and lowest for the 180-210 degree sector (5.04%, 6,935 intervals). Some sectors with high percentages, such as 120-150 degrees (15.09%), rest on fewer than 500 intervals. Average wind speed also varies widely between sectors (from 5.04 m/s to 11.62 m/s), so the effect of direction cannot be separated from the effect of wind speed with this dataset.
 
 ## Limitations
 - The dataset has no fault or status codes, so availability is an estimate and Downtime cannot be separated from Curtailment.
